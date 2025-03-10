@@ -16,12 +16,12 @@ export const modelConfigs = [
     baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
   },
   {
-    model: "doubao-1-5-lite-32k-250115",//豆包模型|火山引擎接入点（改成自己的）
+    model: "doubao-1-5-lite-32k-250115",//豆包模型|火山引擎接入点
     apiKey: "ARK_API_KEY",
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
   {
-    model: "ep-20250306223646-szzkw",//deepseekv火山引擎接入点（改成自己的）
+    model: "ep-20250306223646-szzkw",//deepseekv火山引擎接入点
     apiKey: "ARK_API_KEY1",
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
@@ -32,7 +32,7 @@ export const modelConfigs = [
   },
   {
     model: "qwen-turbo",//调度模型
-    apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
+    apiKey: "DASHSCOPE_API_KEY", //
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {

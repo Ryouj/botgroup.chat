@@ -112,46 +112,28 @@ const Sidebar = ({ isOpen, toggleSidebar, selectedGroupIndex = 0, onSelectGroup 
                     </a>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>即将开放,敬请期待</p>
+                    <p>...</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
             </nav>
           </div>
-          
-          {/* 广告位 */}
-          <AdSection isOpen={isOpen} />
 
           {/* GitHub Star Button - 只在侧边栏打开时显示，放在底部 */}
           <div className="px-3 py-2 mt-auto">
-            {/* 标题移至底部 */}
             <div className="flex items-center justify-left mb-3">
-              <a href="/" className="flex items-center">
-                <span 
-                  style={{ fontFamily: 'Audiowide, system-ui', color: '#ff6600' }} 
+              <a href="https://ryouj.itseeds.top" className="flex items-center">
+                <span
+                  style={{ fontFamily: 'Audiowide, system-ui', color: 'blue' }}
                   className={cn(
                     "transition-all duration-200 whitespace-nowrap overflow-hidden",
                     isOpen ? "text-lg" : "text-xs max-w-0 opacity-0 md:max-w-0"
                   )}
                 >
-                  botgroup.chat
+                  itseeds
                 </span>
               </a>
             </div>
-            
-            {isOpen && (
-              <div className="flex items-center justify-left">
-                <GitHubButton 
-                  href="https://github.com/maojindao55/botgroup.chat"
-                  data-color-scheme="no-preference: light; light: light; dark: light;"
-                  data-size="large"
-                  data-show-count="true"
-                  aria-label="Star maojindao55/botgroup.chat on GitHub"
-                >
-                  Star
-                </GitHubButton>
-              </div>
-            )}
           </div>
         </div>
       </div>
